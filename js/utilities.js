@@ -15,3 +15,4 @@ function gettextValueByID(id){
     const textValue = parseFloat(textValueString);
     return textValue;
 }
+
