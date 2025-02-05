@@ -4,12 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo Mobile Banking System</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <main>
-        <div>
-            
+        <div class="flex justify-center items-center mt-8">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                  <div class="artboard artboard-demo phone-1">
+                    <!-- form start here -->
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl p-2">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Phone Number</span>
+                            </label>
+                            <input id="logInPhoneNumber" type="text" placeholder="Enter your Phone number" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin</span>
+                            </label>
+                            <input id="logInPinNumber" type="password" placeholder="Pin" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="btn-logIn" class="btn btn-primary">Login</button>
+                          </div>
+                        </form>
+                      </div>
+                    <!-- form ends here -->
+                  </div>
+                </div>
+              </div>
         </div>
     </main>
+    <script src="./js/login.js"></script>
 </body>
 </html>
